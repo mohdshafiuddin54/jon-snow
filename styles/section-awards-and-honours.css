@@ -1,0 +1,30 @@
+.section-awards-and-honours{
+    display:grid;
+    gap:2.4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-awards-and-honours h2{
+    grid-column: 1/-1;
+}
+.achievement{
+    /* margin-top: 4.8rem; */
+    display:flex;
+    align-items: center;
+}
+.achievement svg{
+    width: 3.2rem;
+}
+
+@media(max-width:610px){
+    .section-awards-and-honours{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width:370px){
+    .section-awards-and-honours{
+        padding:1.8rem;
+    }
+}

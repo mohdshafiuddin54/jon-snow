@@ -1,0 +1,107 @@
+.section-attrib{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:4.8rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.section-attrib h2{
+    grid-column: 1/ -1;
+    justify-self: start;
+}
+.attrib{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+.attrib-img-1{
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('../img/bastard.jpg');
+}
+.attrib-img-2{
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('../img/lord\ Commander.jpg');
+}
+.attrib-img-3{
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('../img/battleOfBastards.jpg');
+}
+.attrib-img-4{
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('../img/kingInTheNorth.jpg');
+}
+.attrib-img-5{
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('../img/heir.jpeg');
+}
+
+.attrib-img-6{
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('../img/wildlings.jpeg')
+}
+
+.attrib-img{
+    width: 35rem;
+    height:calc((9/16) * 35rem);
+    background-position: center;
+    background-size: contain;
+}
+@media(max-width:1200px){
+    .section-attrib{
+        grid-template-columns: 1fr 1fr;
+    }
+    .attrib-img{
+        width:42rem;
+        height: calc((9/16) * 42rem);
+    }
+}
+
+@media(max-width:1000px){
+    .attrib-img{
+        width:35rem;
+        height: calc((9/16) * 35rem);
+    }
+    
+}
+@media(max-width:850px){
+    .attrib-img{
+        width:30rem;
+        height: calc((9/16) * 30rem);
+    }
+    
+}
+
+@media(max-width:750px){
+    .section-attrib .font1{
+        font-size: 2rem;   
+    }
+    .attrib-img{
+        width:24rem;
+        height: calc((9/16) * 24rem);
+    }
+
+}
+
+@media(max-width:610px){
+    .section-attrib{
+        padding:2rem;
+        gap:1.8rem;
+    }
+}
+
+@media(max-width:500px){
+    .section-attrib{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .attrib{
+        display:flex;
+        /* flex-direction: row  ; */
+    }
+    .attrib-img{
+        width:30rem;
+        height: calc((9/16) * 30rem);
+    }
+
+    .attrib .font1{
+        font-size: 2.4rem;
+    }
+}
